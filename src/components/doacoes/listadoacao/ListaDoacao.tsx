@@ -142,7 +142,7 @@ function ListaDoacao() {
             {
                 posts.map(post => (
                     <Box m={2} >
-                        < div className="Card">
+                        < div id="Card">
                             <form onSubmit={onSubmit}>
                                 <Card variant="outlined">
                                     <CardMedia
@@ -159,7 +159,7 @@ function ListaDoacao() {
                                         <Typography variant="h5" component="h2">
                                             { }
                                         </Typography>
-                                        <Typography variant="body2" component="p">
+                                        <Typography variant="body2" id='descricao' component="p">
                                             {"Descrição: " + post.descricao}
                                         </Typography>
                                         <Typography variant="body2" component="p">
